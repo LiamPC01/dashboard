@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+#container {
+    border: solid green 2px;
+    height: 99.6vh;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+div {
+    border: solid black 2px;
+}
+
+#header {
+    background-color: rgb(92, 209, 92);
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+#sidebar {
+    background-color: rgb(143, 143, 255);
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+#main {
+    background-color: rgb(190, 190, 190);
+    grid-area: 2 / 2 / 2 / 4;
+}
