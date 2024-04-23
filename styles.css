@@ -4,7 +4,7 @@ body {
 
 #container {
     border: solid green 2px;
-    height: 99.6vh;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -12,20 +12,121 @@ body {
 }
 
 div {
-    border: solid black 2px;
+    /* border: solid black 2px; */
 }
 
 #header {
-    background-color: rgb(92, 209, 92);
+    background-color: rgb(255, 255, 255);
     grid-area: 1 / 2 / 1 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    height: 150px;
+}
+
+#header #searchbar-container {
+    grid-area: 1 / 1 / 1 / 2;
+}
+
+#header #searchbar {
+    border-radius: 15px;
+    background-color: rgb(221, 221, 221);
+    border: 0px;
+    width: 500px;
+    height: 25px;
+}
+
+#header #greeting {
+    grid-area: 2 / 1 / 2 / 2;
+    font-weight: bold;
+}
+#header #greeting #name {
+    font-size: x-large;
+}
+
+#header #account-buttons {
+    grid-area: 1 / 2 / 1 / 2;
+    font-size: x-large;
+    font-weight: bold; 
+    text-align: end;
+}
+
+#account-buttons p {
+    display:inline;
+    margin-left: 25px;
+}
+
+#header #share-buttons {
+    grid-area: 2 / 2 / 2 / 2;
+    margin-top: 50px;
+    text-align: end;
+}
+
+.share-button {
+    background-color: rgb(68, 147, 250);
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+    height: 35px;
+    width: 100px;
+    font-weight: bold;
 }
 
 #sidebar {
-    background-color: rgb(143, 143, 255);
+    background-color: rgb(68, 147, 250);
     grid-area: 1 / 1 / 3 / 1;
 }
 
+#sidebar p {
+    font-size: xx-large;
+}
+
+#sidebar-buttons {
+    color: white;
+    font-size: x-large;
+}
+
+#sidebar-buttons li {
+    padding-top: 25px;
+}
+
+
+
 #main {
-    background-color: rgb(190, 190, 190);
-    grid-area: 2 / 2 / 2 / 4;
+    background-color: rgb(221, 221, 221);
+    grid-area: 2 / 2 / 2 / 3;
+    padding: 25px;
+}
+
+#main #projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+}
+
+#main .project {
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    height: 100px;
+    padding-top: 25px;
+}
+
+.project h3 {
+    margin-top: 0px;
+}
+
+.project p {
+    color: rgb(59, 59, 59);
+}
+
+#announcements-container {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+.announcement {
+    
 }
