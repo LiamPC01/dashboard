@@ -43,6 +43,7 @@ div {
     grid-area: 2 / 1 / 2 / 2;
     font-weight: bold;
 }
+
 #header #greeting #name {
     font-size: x-large;
 }
@@ -50,12 +51,12 @@ div {
 #header #account-buttons {
     grid-area: 1 / 2 / 1 / 2;
     font-size: x-large;
-    font-weight: bold; 
+    font-weight: bold;
     text-align: end;
 }
 
 #account-buttons p {
-    display:inline;
+    display: inline;
     margin-left: 25px;
 }
 
@@ -75,65 +76,81 @@ div {
     font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+
 #sidebar {
     background-color: rgb(68, 147, 250);
     grid-area: 1 / 1 / 3 / 1;
-    grid-template-columns: 1fr 4fr;
+    /* color: white; */
+    font-size: x-large;
+    
 }
 
 #sidebar-buttons {
-    color: white;
-    font-size: x-large;
-    display:grid;
-   
+    margin: 30px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-rows: 150px repeat(10, 70px);
 }
 
 #dashboard-icon {
-    margin: 20px;
-    margin-right: 0px;
+    margin: 0px;
     height: 60px;
-    grid-area: 1 / 1 / 1 / 1;
 
 }
 
 #dashboard-title {
-    grid-area: 1 / 2 / 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#icons-group1 {
-    grid-area: 2 / 1 / 2 / 1;
+#sidebar>img {
+    display: inline;
 }
 
-#buttons-group1 {
-    grid-area: 2 / 2 / 2 / 2;
+#home {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#icons-group2 {
 
-}
+
 
 #sidebar-buttons img {
     height: 50px;
 }
 
+#sidebar h2 {
+    margin-top: 5px;
+}
+
 #sidebar p {
     font-size: xx-large;
-    grid-column-start: 2;
-
+    display: inline;
+    margin-top: 5px;
 }
 
 #sidebar-buttons li {
     padding-top: 25px;
 }
 
-#buttons-group1 {
-    grid-column-start: 2;
-}
-
-#buttons-group2 {
-    grid-column-start: 2;
+ul {
+    margin: 0px;
 
 }
+
+li {
+    margin-bottom: 12px;
+}
+
 
 
 
@@ -148,7 +165,7 @@ div {
 #main #projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:25px;
+    gap: 25px;
 }
 
 #main .project {
@@ -167,14 +184,14 @@ div {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    
+
 }
 
-.project-buttons-container > * {
+.project-buttons-container>* {
     grid-area: 1 / 2 / 1 / 2;
 }
 
-.project-buttons > * {
+.project-buttons>* {
     margin-right: 10px;
 }
 
@@ -217,23 +234,23 @@ h3 {
 }
 
 .announcement {
-    font-size:smaller;
+    font-size: smaller;
     /* padding: 20px; */
     /* padding-bottom: 0px; */
-    
+
 }
 
 #right-bar {
     background-color: rgb(221, 221, 221);
     padding: 25px;
-    
+
 }
 
 #trending-container {
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    
+
 }
 
 .user {
@@ -245,7 +262,7 @@ h3 {
 .profile-pic {
     border-radius: 25px;
     grid-area: 1 / 1 / 2 / 1;
-    margin: 8px;    
+    margin: 8px;
 }
 
 .description {
@@ -254,7 +271,3 @@ h3 {
     padding: 10px;
     margin: 0px;
 }
-
-
-
-
