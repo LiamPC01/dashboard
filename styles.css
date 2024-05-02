@@ -29,6 +29,14 @@ div {
 
 #header #searchbar-container {
     grid-area: 1 / 1 / 1 / 2;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-top: 8px;
+    
+}
+
+#searchbar-container img {
+    /* border: solid red 2px; */
 }
 
 #header #searchbar {
@@ -37,6 +45,7 @@ div {
     border: 0px;
     width: 500px;
     height: 25px;
+    margin-left: 10px;
 }
 
 #header #greeting {
@@ -53,11 +62,24 @@ div {
     font-size: x-large;
     font-weight: bold;
     text-align: end;
+    display:grid;
+    grid-template-columns: 60px 100px 1fr;
+}
+
+#bell {
+    margin-top: 20px;
 }
 
 #account-buttons p {
     display: inline;
     margin-left: 25px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+#account-buttons img {
+    border-radius: 50px;
 }
 
 #header #share-buttons {
@@ -88,68 +110,45 @@ div {
 #sidebar {
     background-color: rgb(68, 147, 250);
     grid-area: 1 / 1 / 3 / 1;
-    /* color: white; */
-    font-size: x-large;
+    color: white;
+    font-weight: bold;
     
 }
 
 #sidebar-buttons {
     margin: 30px;
+    margin-top: 15px;
     margin-right: 80px;
     display: grid;
-    grid-template-rows: 150px repeat(10, 70px);
+    grid-template-rows: 125px;
 }
 
-#dashboard-icon {
-    margin: 0px;
-    height: 60px;
-
-}
-
-#dashboard-title {
+#sidebar-buttons > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 80px 1fr;
 }
-
-#sidebar>img {
-    display: inline;
-}
-
-#home {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-
 
 #sidebar-buttons img {
-    height: 50px;
+    height: 30px;
+    margin-left: 15px;
 }
 
-#sidebar h2 {
-    margin-top: 5px;
+#sidebar-buttons #dashboard-icon {
+    height: 60px;
+    margin-left: 0px;
 }
 
 #sidebar p {
+    font-size: x-large;
+    margin-top: 2px;
+}
+
+#sidebar h2 {
     font-size: xx-large;
-    display: inline;
-    margin-top: 5px;
+    margin-top: 14px;
 }
 
-#sidebar-buttons li {
-    padding-top: 25px;
-}
 
-ul {
-    margin: 0px;
-
-}
-
-li {
-    margin-bottom: 12px;
-}
 
 
 
