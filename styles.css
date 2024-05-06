@@ -7,7 +7,7 @@ body {
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 3fr;
 }
 
@@ -22,7 +22,7 @@ div {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 25px;
-    padding-right: 100px;
+    padding-right: 40px;
     padding-bottom: 10px;
     height: 150px;
 }
@@ -43,10 +43,12 @@ div {
     border-radius: 15px;
     background-color: rgb(221, 221, 221);
     border: 0px;
-    width: 500px;
-    height: 25px;
+    width: 650px;
+    height: 35px;
     margin-left: 10px;
 }
+
+
 
 #header #greeting {
     grid-area: 2 / 1 / 2 / 2;
@@ -54,7 +56,7 @@ div {
 }
 
 #header #greeting #name {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #header #account-buttons {
@@ -63,16 +65,22 @@ div {
     font-weight: bold;
     /* text-align: end; */
     display:grid;
-    grid-template-columns: 60px 80px 1fr;
+    grid-template-columns: 50px 50px 1fr;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
+#greeting p {
+    font-size: 20px;
+}
 
 
 #account-buttons p {
     display: inline;
     margin-left: 25px;
     margin-top: 20px;
-    /* text-align: left; */
+    text-align: right;
     margin-left: 0px;
 }
 
@@ -86,8 +94,10 @@ div {
 
 #header #share-buttons {
     grid-area: 2 / 2 / 2 / 2;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: end;
+    
+    
 }
 
 .share-button {
@@ -95,9 +105,11 @@ div {
     color: white;
     border-radius: 20px;
     border: 0px;
-    height: 35px;
-    width: 100px;
+    height: 45px;
+    width: 120px;
     font-weight: bold;
+    margin-left: 20px;
+    
 }
 
 #greeting-pic {
@@ -140,7 +152,7 @@ div {
 
 #sidebar-buttons > div {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 60px 1fr;
 }
 
 #sidebar-buttons img {
@@ -185,28 +197,36 @@ div {
 #main .project {
     background-color: white;
     border-radius: 15px;
-    padding: 50px;
+    /* padding: 50px; */
     padding-top: 25px;
     display: grid;
     grid-template-columns: 10px 1fr;
     grid-template-rows: 2em 2fr 1fr;
     padding: 0px;
+    /* padding-bottom: 50px; */
+    padding-right: 30px;
 }
 
 .project-buttons-container {
     grid-area: 3 / 2 / 3 / 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: flex-end;
 
 
 }
 
 .project-buttons-container>* {
     grid-area: 1 / 2 / 1 / 2;
+    
 }
 
 .project-buttons>* {
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
 }
 
 .project p {
@@ -248,7 +268,7 @@ h3 {
 }
 
 .announcement {
-    font-size: smaller;
+    font-size: 15px;
     /* padding: 20px; */
     /* padding-bottom: 0px; */
 
